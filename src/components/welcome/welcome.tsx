@@ -1,6 +1,5 @@
-import { WELCOME_IMG } from "@/constants/welcome";
+import { WELCOME_IMG, BLACK_BASE46_IMG } from "@/constants/welcome";
 import Image from "next/image";
-import { relative } from "path";
 import React from "react";
 
 export const Welcome = () => {
@@ -19,11 +18,22 @@ export const Welcome = () => {
           quality={93}
           fill
           sizes="100vw,(max-width: 600px) 75vw"
-          placeholder="blur"
-          blurDataURL="/images/black_image.jpg"
+          placeholder="blur" //TODO:search more for this
+          blurDataURL={BLACK_BASE46_IMG}
           priority
           style={{ zIndex: "1" }}
         />
+        <div
+          style={{
+            position: "absolute",
+            zIndex: "3",
+            color: "#fff",
+            right: "50%",
+            top: "50%",
+          }}
+        >
+          Abdelhalim's Protfolio
+        </div>
       </div>
     </>
   );
