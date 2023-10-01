@@ -1,7 +1,7 @@
 import { WELCOME_IMG, BLACK_BASE46_IMG } from "@/constants/welcome";
 import Image from "next/image";
 import React from "react";
-
+import styles from "./welcome.module.css";
 export const Welcome = () => {
   return (
     <>
@@ -15,7 +15,7 @@ export const Welcome = () => {
         <Image
           src={WELCOME_IMG}
           alt="welcome"
-          quality={93}
+          quality={95}
           fill
           sizes="100vw,(max-width: 600px) 75vw"
           placeholder="blur" //TODO:search more for this
@@ -23,17 +23,23 @@ export const Welcome = () => {
           priority
           style={{ zIndex: "1" }}
         />
-        <div
+        <div className={styles.card}></div>
+        <h3
           style={{
-            position: "absolute",
-            zIndex: "3",
+            zIndex: 4,
             color: "#fff",
-            right: "50%",
-            top: "50%",
+            position: "absolute",
+            left: 0,
+            right: 0,
+            marginLeft: "auto",
+            marginRight: "auto",
+            textAlign: "center",
+            width: "33vw",
+            top: "53%",
           }}
         >
-          Abdelhalim's Protfolio
-        </div>
+          Abdelhalim Ben Oun Portfolio
+        </h3>
       </div>
     </>
   );

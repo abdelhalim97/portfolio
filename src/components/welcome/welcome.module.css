@@ -1,0 +1,61 @@
+.card {
+  height: 20vh;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  top: 45%;
+  text-align: center;
+  overflow: hidden;
+  opacity: 85%;
+  border-radius: 10px;
+
+  /* specifc widdth is needed to center the elem */
+
+  width: 33vw;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-280deg);
+  width: 160%;
+  height: 130%;
+  background-image: conic-gradient(
+    #fff 0deg,
+    #fff 90deg,
+    transparent 130deg,
+    transparent 180deg,
+    #808080 180deg,
+    #808080 270deg,
+    transparent 310deg,
+    transparent 360deg
+  );
+  transition: transform 2s;
+  box-shadow: 0px 0px 5px 2px #fff;
+}
+.card:hover::before {
+  transform: translate(-50%, -50%) rotate(-100deg);
+}
+
+.card::after {
+  border-radius: 10px;
+  content: "";
+  color: #fff;
+  position: absolute;
+  background: linear-gradient(90deg, #000000 0%, #434343 91%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  width: 99%;
+  height: 98%;
+  transform: translate(-50%, -50%);
+}
