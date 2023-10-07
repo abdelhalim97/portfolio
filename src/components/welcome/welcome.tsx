@@ -15,6 +15,7 @@ export const Welcome = () => {
         <Image
           src={WELCOME_IMG}
           alt="welcome"
+          quality={95}
           fill
           objectFit="contain"
           // sizes="100vw,(max-width: 600px) 75vw"
