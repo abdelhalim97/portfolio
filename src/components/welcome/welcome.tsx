@@ -16,6 +16,7 @@ export const Welcome = () => {
           src={WELCOME_IMG}
           alt="welcome"
           fill
+          objectFit="contain"
           // sizes="100vw,(max-width: 600px) 75vw"
           placeholder="blur" //TODO:search more for this
           blurDataURL={BLACK_BASE46_IMG}
