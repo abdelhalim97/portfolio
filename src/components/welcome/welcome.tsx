@@ -15,7 +15,6 @@ export const Welcome = () => {
         <Image
           src={WELCOME_IMG}
           alt="welcome"
-          quality={95}
           fill
           // sizes="100vw,(max-width: 600px) 75vw"
           placeholder="blur" //TODO:search more for this
