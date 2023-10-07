@@ -24,8 +24,8 @@ export const Welcome = () => {
           priority
           style={{ zIndex: "1" }}
         />
-        <div className={styles.card}></div>
         <h3
+          className={styles.label}
           style={{
             zIndex: 4,
             color: "#fff",
@@ -41,6 +41,7 @@ export const Welcome = () => {
         >
           Abdelhalim Ben Oun Portfolio
         </h3>
+        <div className={styles.card}></div>
       </div>
     </>
   );
