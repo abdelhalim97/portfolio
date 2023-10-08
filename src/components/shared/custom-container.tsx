@@ -9,7 +9,7 @@ const CustomContainer: React.FC<CustomContainerPropsI> = ({
   return (
     <div
       style={{
-        width: "100wv",
+        width: "100vw",
         backgroundColor: isColor ? "#FFF" : "#000",
       }}
     >

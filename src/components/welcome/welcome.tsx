@@ -11,7 +11,7 @@ export const Welcome = () => {
           position: "relative",
           justifyContent: "center",
           width: "100vw",
-          height: "100vh",
+          height: "85vh",
         }}
       >
         <Image
