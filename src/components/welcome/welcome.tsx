@@ -2,12 +2,14 @@ import { WELCOME_IMG_BIG, BLACK_BASE46_IMG } from "@/constants/welcome";
 import Image from "next/image";
 import React from "react";
 import styles from "./welcome.module.css";
+import CustomContainer from "@/components/shared/custom-container";
 export const Welcome = () => {
   return (
-    <>
+    <CustomContainer isColor={false}>
       <div
         style={{
           position: "relative",
+          justifyContent: "center",
           width: "100vw",
           height: "100vh",
         }}
@@ -43,6 +45,6 @@ export const Welcome = () => {
         </h3>
         <div className={styles.card}></div>
       </div>
-    </>
+    </CustomContainer>
   );
 };
