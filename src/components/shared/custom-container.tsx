@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { CustomContainerPropsI } from "@/types/shared/custom-container.interface";
+import { CustomContainerPropsI } from "@/types/shared/custom-container.interface copy";
 
 const CustomContainer: React.FC<CustomContainerPropsI> = ({
   isColor = true,

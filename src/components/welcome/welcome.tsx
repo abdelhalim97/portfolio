@@ -19,12 +19,11 @@ export const Welcome = () => {
           alt="welcome"
           quality={95}
           fill
-          objectFit="contain"
           // sizes="100vw,(max-width: 600px) 75vw"
           placeholder="blur" //TODO:search more for this
           blurDataURL={BLACK_BASE46_IMG}
           priority
-          style={{ zIndex: "1" }}
+          style={{ zIndex: "1", objectFit: "cover" }}
         />
         <h3
           className={styles.label}
